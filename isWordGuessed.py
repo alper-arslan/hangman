@@ -1,16 +1,16 @@
-def isWordGuessed(secretWord, lettersGuessed):
+def is_word_guessed(secret_word, letters_guessed):
     '''
     secretWord: string, the word the user is guessing
     lettersGuessed: list, what letters have been guessed so far
     returns: boolean, True if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    secretWord_list = list(secretWord)
-    trueCount = 0
-    for i in range(len(secretWord_list)):
-        if secretWord_list[i] in lettersGuessed:
-            trueCount += 1
-    if trueCount == len(secretWord):
+    secret_word_list = list(secret_word)
+    true_count = 0
+    for i in range(len(secret_word_list)):
+        if secret_word_list[i] in letters_guessed:
+            true_count += 1
+    if true_count == len(secret_word):
         return True
     else:
         return False
